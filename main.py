@@ -2,6 +2,7 @@ from fastapi import FastAPI, Query
 from objects.class_message import *
 from settings import *
 
+# http://127.0.0.1:8000
 app = FastAPI()
 
 @app.get("/{models}")
@@ -15,12 +16,12 @@ def get_folders(models: str):
         - La carpeta solicitada por parametro.
     """
     model = verify_models(models)
-
     folders = load_data(f"models/{model}.json")
+
     return folders
 
 @app.get("/folders/messages/{models}")
-def get_messages(models: str, from_user: str = Query("", alias="from"), to_user: str = Query("", alias="to"), subject: str = Query("", alias="subject")):
+def get_messages(models: str, from_user: str = Query("", alias="from"), to_user: str = Query("", alias="to"), subject: str = Query("", alias="subject")):   
     """
     Brief: 
         Obtiene mensajes filtrados según los parámetros especificados.
@@ -51,11 +52,12 @@ def create_message(models, message: Message):
     model = verify_models(models)
 
     result = save_data(f"models/{model}.json", dict(message))
+
     return result
 
 
 @app.delete("/folders/messages/delete/{models}/{message_id}")
-def delete_message_by_id_endpoint(models, message_id):
+def delete_message_by_id_endpoint(models: str, message_id: str):
     """
     Brief: 
         Elimina un mensaje según el ID proporcionado en la URL.
@@ -66,8 +68,8 @@ def delete_message_by_id_endpoint(models, message_id):
         - El mensaje de confirmacion/error.
     """
     model = verify_models(models)
-    
-    result = delete_message(f"models/{model}.json", models, message_id)
+    result = delete_message(f"models/{model}.json", model, message_id) # Ojo
+
     return result
 
 
@@ -76,7 +78,6 @@ def delete_message_by_id_endpoint(models, message_id):
 
 
 
-# http://127.0.0.1:8000
 
 
 
