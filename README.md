@@ -12,7 +12,7 @@ Proyecto: Challenge Teknos API Rest
 
 Imagen
 ----------------------------
-![]()
+![](https://github.com/SmaniaMatias20/ChallengeTeknos/blob/master/images/image.png)
 
 Descripcion del proyecto
 
