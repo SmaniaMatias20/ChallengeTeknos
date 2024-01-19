@@ -31,11 +31,7 @@ diferentes carpetas (archivos) y para ello cuenta con cuatro enpoints.
 @app.delete("/folders/messages/delete/{models}/{message_id}")
 - Elimina un mensaje según el ID proporcionado en la URL.
 
-No permite guardar dos mensajes con el mismo ID y una vez eliminado, el mensaje se guarda en el archivo "trash".
-
-
-
-
+No permite crear dos mensajes con el mismo ID y una vez eliminado, el mensaje se guarda en el archivo "trash".
 
 Link al video del proyecto
 ----------------------------
