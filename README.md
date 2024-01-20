@@ -16,7 +16,7 @@ Imagen
 
 Descripcion del proyecto
 
-Desarrollo de una APIs REST en Python utilizando el framework FastAPI. Este proyecto tiene como funcion gestionar mensajes en diferentes carpetas (archivos) y para ello cuenta con cuatro enpoints.
+Desarrollo de una APIs REST en Python utilizando el framework FastAPI. Este proyecto tiene como funcion gestionar mensajes en diferentes carpetas (archivos) y para ello cuenta con cuatro endpoints.
 
 @app.get("/{models}")
 - Obtiene las carpetas correspondientes al modelo proporcionado en la URL.
