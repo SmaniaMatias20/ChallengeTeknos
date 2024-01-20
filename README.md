@@ -31,7 +31,6 @@ Desarrollo de una APIs REST en Python utilizando el framework FastAPI. Este proy
 - Elimina un mensaje según el ID proporcionado en la URL.
 
 No permite crear dos mensajes con el mismo ID y una vez eliminado, el mensaje se guarda en el archivo "trash".
-
 Comando para correr el servidor: uvicorn main:app --reload
 
 Link al video del proyecto
