@@ -65,30 +65,6 @@
             "important": false,
             "hasAttachments": false,
             "labels": []
-        },
-        {
-            "id": "40910931",
-            "from": {
-                "name": "Smania Matias",
-                "avatar": "assets/images/avatars/vincent.jpg",
-                "email": "matiasezequielsmania@gmail.com"
-            },
-            "to": [
-                {
-                    "name": "me",
-                    "email": "johndoe@creapond.com"
-                }
-            ],
-            "subject": "string",
-            "body": "Mensaje de prueba",
-            "time": "18 Jan",
-            "read": false,
-            "starred": false,
-            "important": false,
-            "has_attachments": false,
-            "labels": [
-                "string"
-            ]
         }
     ]
 }

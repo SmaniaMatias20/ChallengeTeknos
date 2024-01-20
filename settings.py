@@ -113,7 +113,7 @@ def filter_messages(file_path = "", from_user: str = "", to_user: str = "", subj
 
         return filtered_messages
 
-def delete_message(file_path, models, message_id: str):  #################### Probar
+def delete_message(file_path, models, message_id: str):  
     """
     Brief: 
         Elimina un mensaje del archivo y, opcionalmente, lo guarda en la archivo 'starred'.

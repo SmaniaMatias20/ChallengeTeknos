@@ -68,7 +68,7 @@ def delete_message_by_id_endpoint(models: str, message_id: str):
         - El mensaje de confirmacion/error.
     """
     model = verify_models(models)
-    result = delete_message(f"models/{model}.json", model, message_id) # Ojo
+    result = delete_message(f"models/{model}.json", model, message_id) 
 
     return result
 

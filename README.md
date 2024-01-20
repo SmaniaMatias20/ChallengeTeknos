@@ -7,7 +7,7 @@ Informacion
 - Email: matiasezequielsmania@gmail.com
 - DNI: 40910931
 
-Proyecto: Challenge Teknos API Rest
+Proyecto: Challenge Teknos APIs REST
 
 
 Imagen
@@ -16,8 +16,7 @@ Imagen
 
 Descripcion del proyecto
 
-Desarrollo de una APIs REST en Python utilizando el framework FastAPI. Este proyecto tiene como funcion gestionar mensajes en 
-diferentes carpetas (archivos) y para ello cuenta con cuatro enpoints.
+Desarrollo de una APIs REST en Python utilizando el framework FastAPI. Este proyecto tiene como funcion gestionar mensajes en diferentes carpetas (archivos) y para ello cuenta con cuatro enpoints.
 
 @app.get("/{models}")
 - Obtiene las carpetas correspondientes al modelo proporcionado en la URL.
@@ -33,13 +32,9 @@ diferentes carpetas (archivos) y para ello cuenta con cuatro enpoints.
 
 No permite crear dos mensajes con el mismo ID y una vez eliminado, el mensaje se guarda en el archivo "trash".
 
+Comando para correr el servidor: uvicorn main:app --reload
+
 Link al video del proyecto
 ----------------------------
 
-Obtener mensajes: 
-
-Obtener mensajes: 
-
-Crear mensajes:
-
-Eliminar mensajes: 
+- Link: https://youtu.be/bGzSAQ65Kvk?si=dfzrY4JMQDe7lz-f 
